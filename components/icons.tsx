@@ -7,7 +7,7 @@ export const Logo = ({
   theme = "light",
 }) => (
   <img
-    src={theme === "dark" ? "/favicon-darkmode.ico" : "/favicon-lightmode.ico"}
+    src={theme === "dark" ? "/favicon-darkmode.jpg" : "/favicon-lightmode.jpg"}
     alt="yoya-logo"
     height={size}
     width={size}

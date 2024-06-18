@@ -42,9 +42,9 @@ export const AIChatPane = (props: AIChatPaneProps) => {
         },
         subBackground: {
             default: "bg-default-200",
-            gentle: "bg-green-200",
-            professional: "bg-blue-200",
-            creative: "bg-yellow-200"
+            gentle: "bg-green-100",
+            professional: "bg-blue-100",
+            creative: "bg-yellow-100"
         },
         iconBackground: {
             default: "bg-default-200/65 hover:bg-default-200",
@@ -75,7 +75,7 @@ export const AIChatPane = (props: AIChatPaneProps) => {
     }
 
     return (
-        <div className="flex flex-col relative gap-4 h-full p-4 overflow-hidden">
+        <div className="flex flex-col relative gap-4 h-full p-2 sm:p-4 overflow-hidden">
             <div className="absolute inset-0 rounded overflow-hidden">
                 {backgroundSVG[props.mode]}
             </div>

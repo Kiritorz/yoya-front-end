@@ -15,8 +15,11 @@ export default function DefaultLayout({
       <main className="container mx-auto max-w-full px-2 sm:px-6 flex-grow">
         {children}
       </main>
-      <footer className="text-center text-default-400 mb-2 text-sm select-none cursor-default">
+      <footer className="absolute hidden sm:flex text-center text-default-400 bottom-2 left-1/2 -translate-x-1/2 text-sm select-none cursor-default">
         当前页面仅用作展示，不具备交互逻辑
+      </footer>
+      <footer className="absolute sm:hidden text-center text-default-400 bottom-2 left-1/2 -translate-x-1/2 text-sm select-none cursor-default">
+        页面仅用作展示
       </footer>
     </div>
   );

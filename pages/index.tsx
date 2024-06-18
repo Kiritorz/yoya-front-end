@@ -77,13 +77,13 @@ export default function IndexPage() {
 
   return (
     <DefaultLayout>
-      <section className="flex flex-col sm:flex-row items-center justify-center gap-4 py-8 px-4 md:py-10">
-        <div className="max-[640px]:w-full min-[640px]:w-1/4 self-start px-0 md:p-2 lg:px-12 flex flex-col gap-4">
+      <section className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="max-[640px]:w-full min-[640px]:w-1/4 self-start px-0 md:px-2 sm:pt-4 lg:px-12 flex flex-col gap-4">
           {DayTimeCard}
           <Divider />
           {TodayTodoList}
         </div>
-        <div className="max-[640px]:w-full min-[640px]:w-3/4 h-[42rem] self-start">
+        <div className="max-[640px]:w-full min-[640px]:w-3/4 h-[44rem] self-start">
           {ChatPane}
         </div>
       </section>

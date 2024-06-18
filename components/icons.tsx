@@ -15,6 +15,23 @@ export const Logo = ({
   />
 );
 
+export const SigninBackground: React.FC<IconSvgProps> = () => {
+  return (
+    <svg width="100%" height="100%" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg" >
+      <desc>
+        Created with Pixso.
+      </desc>
+      <defs>
+        <linearGradient x1="0.000000" y1="257.454346" x2="100%" y2="548.363403" id="paint_linear_10_16_0" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#4923B4" />
+          <stop offset="1.000000" stop-color="#E878CF" />
+        </linearGradient>
+      </defs>
+      <path id="Rectangle 2" d="M0 0L1440 0L1440 600C1440 710.45 1350.46 800 1240 800L0 800L0 0Z" fill="url(#paint_linear_10_16_0)" fill-opacity="1.000000" fill-rule="evenodd" />
+    </svg>
+  )
+}
+
 export const ChatBackgroundGentle: React.FC<IconSvgProps> = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1440 560">

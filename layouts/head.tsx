@@ -2,6 +2,7 @@ import React from "react";
 import NextHead from "next/head";
 
 import { siteConfig } from "@/config/site";
+import { getImgSource } from "@/utils";
 
 export const Head = () => {
   return (
@@ -15,7 +16,7 @@ export const Head = () => {
         content="viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
         name="viewport"
       />
-      <link href={`${process.env.NODE_ENV === "production" ? '/yoya-front-end' : ''}/favicon.ico`} rel="icon" />
+      <link href={getImgSource("/favicon.ico")} rel="icon" />
     </NextHead>
   );
 };

@@ -1,13 +1,14 @@
 import * as React from "react";
 
 import { IconSvgProps } from "@/types";
+import { getImgSource } from "@/utils";
 
 export const Logo = ({
   size = 36,
   theme = "light",
 }) => (
   <img
-    src={`${process.env.NODE_ENV === "production" ? '/yoya-front-end' : ''}${theme === "dark" ? "/favicon-darkmode.ico" : "/favicon-lightmode.ico"}`}
+    src={getImgSource(theme === "dark" ? "/favicon-darkmode.ico" : "/favicon-lightmode.ico")}
     alt="yoya-logo"
     height={size}
     width={size}

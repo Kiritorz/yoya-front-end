@@ -5,22 +5,22 @@ export const siteConfig = {
   description: "学海有涯，规划你的学习生涯",
   navItems: [
     {
-      label: "主页",
+      label: "首页",
       href: "/",
     },
     {
-      label: "学习情况追踪",
-      href: "/trace",
+      label: "个人中心",
+      href: "/me",
     },
   ],
   navMenuItems: [
     {
-      label: "主页",
+      label: "首页",
       href: "/",
     },
     {
-      label: "学习情况追踪",
-      href: "/trace",
+      label: "个人中心",
+      href: "/me",
     },
   ],
   links: {

@@ -2,7 +2,7 @@ import { Divider, Checkbox, Calendar, ScrollShadow, Input } from "@nextui-org/re
 import DefaultLayout from "@/layouts/default";
 import { useEffect, useState } from "react";
 import { format } from "date-fns";
-import { ChatBubbleLeftRightIcon, PencilSquareIcon, SparklesIcon } from "@heroicons/react/24/solid"
+import { BookOpenIcon, ChatBubbleLeftRightIcon, PencilSquareIcon, SparklesIcon } from "@heroicons/react/24/solid"
 import { I18nProvider } from "@react-aria/i18n";
 import { Logo } from "@/components/icons";
 import { useTheme } from "next-themes";
@@ -90,10 +90,10 @@ export default function IndexPage() {
   // 左
   const DayTimeCard = (
     <div className="flex gap-3">
-      <div className="bg-default-foreground text-default py-4 sm:py-12 text-center text-3xl sm:text-7xl w-1/2 rounded-lg">
+      <div className="bg-default-foreground text-default py-4 sm:py-12 text-center text-3xl xl:text-7xl w-1/2 rounded-lg">
         {format(currentTime, "HH")}
       </div>
-      <div className="bg-default-foreground text-default py-4 sm:py-12 text-center text-3xl sm:text-7xl w-1/2 rounded-lg">
+      <div className="bg-default-foreground text-default py-4 sm:py-12 text-center text-3xl xl:text-7xl w-1/2 rounded-lg">
         {format(currentTime, "mm")}
       </div>
     </div>
@@ -131,7 +131,7 @@ export default function IndexPage() {
   const StudyPlanList = (
     <div className="flex flex-col gap-2">
       <div className="flex gap-2 sm:bg-default-100 text-lg sm:text-base rounded-lg px-2 py-1">
-        <SparklesIcon className="size-6 sm:size-5 my-auto fill-amber-400" />
+        <BookOpenIcon className="size-6 sm:size-5 my-auto fill-amber-400" />
         <p className="font-semibold">学习规划</p>
       </div>
       <div className="pl-1">
@@ -180,7 +180,7 @@ export default function IndexPage() {
   return (
     <DefaultLayout>
       <section className="flex flex-col sm:flex-row h-full items-center justify-center gap-4 py-8 px-4 md:py-10">
-        <div className="w-full sm:w-1/4 self-start px-0 sm:px-12 flex flex-col gap-4">
+        <div className="max-[640px]:w-full max-[1400px]:w-1/4 min-[1400px]:w-1/4 self-start px-0 md:p-2 lg:px-12 flex flex-col gap-4">
           {DayTimeCard}
           <Divider />
           {TodayTodoList}
@@ -188,10 +188,10 @@ export default function IndexPage() {
             {StudyPlanList}
           </div>
         </div>
-        <div className="w-full sm:w-1/2 self-start">
+        <div className="max-[640px]:w-full max-[1400px]:w-3/4 min-[1400px]:w-1/2 self-start">
           {ChatPane}
         </div>
-        <div className="w-full sm:w-1/4 self-start px-0 sm:px-12 flex flex-col gap-4">
+        <div className="max-[640px]:w-full max-[1400px]:hidden min-[1400px]:w-1/4 self-start px-0 sm:px-12 flex flex-col gap-4">
           <div className="hidden sm:block">
             {CalendarCard}
           </div>

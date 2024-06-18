@@ -9,8 +9,20 @@ export const siteConfig = {
       href: "/",
     },
     {
+      label: "生涯规划",
+      href: "/chat/career-planning"
+    },
+    {
+      label: "心理咨询",
+      href: "/chat/psychological-counseling"
+    },
+    {
+      label: "学习计划",
+      href: "/chat/study-plan"
+    },
+    {
       label: "个人中心",
-      href: "/me",
+      href: "/info",
     },
   ],
   navMenuItems: [
@@ -19,8 +31,20 @@ export const siteConfig = {
       href: "/",
     },
     {
+      label: "生涯规划",
+      href: "/chat/career-planning"
+    },
+    {
+      label: "心理咨询",
+      href: "/chat/psychological-counseling"
+    },
+    {
+      label: "学习计划",
+      href: "/chat/study-plan"
+    },
+    {
       label: "个人中心",
-      href: "/me",
+      href: "/info",
     },
   ],
   links: {

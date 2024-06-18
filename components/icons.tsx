@@ -15,6 +15,93 @@ export const Logo = ({
   />
 );
 
+export const ChatBackgroundGentle: React.FC<IconSvgProps> = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1440 560">
+      <g mask="url(&quot;#SvgjsMask1013&quot;)" fill="none">
+        <rect width="100%" height="100%" x="0" y="0" fill="rgba(14, 71, 19, 1)"></rect>
+        <path d="M 0,190 C 57.6,157.2 172.8,12.2 288,26 C 403.2,39.8 460.8,240.2 576,259 C 691.2,277.8 748.8,136.2 864,120 C 979.2,103.8 1036.8,177.6 1152,178 C 1267.2,178.4 1382.4,133.2 1440,122L1440 560L0 560z" fill="rgba(24, 126, 34, 1)"></path>
+        <path d="M 0,291 C 96,331.6 288,486.2 480,494 C 672,501.8 768,342.4 960,330 C 1152,317.6 1344,411.6 1440,432L1440 560L0 560z" fill="rgba(34, 171, 100, 1)"></path>
+      </g>
+      <defs>
+        <mask id="SvgjsMask1013">
+          <rect width="100%" height="100%" fill="#ffffff"></rect>
+        </mask>
+      </defs>
+    </svg>
+  )
+}
+
+export const ChatBackgroundProfessional: React.FC<IconSvgProps> = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1440 560">
+      <g mask="url(&quot;#SvgjsMask1018&quot;)" fill="none">
+        <rect width="100%" height="100%" x="0" y="0" fill="url(&quot;#SvgjsLinearGradient1019&quot;)"></rect>
+        <path d="M1560 560L0 560 L0 202.2Q88.5 218.7, 72 307.21Q64.12 227.32, 144 219.44Q192.95 148.39, 264 197.34Q327.86 189.2, 336 253.06Q406.7 203.76, 456 274.47Q461.44 207.92, 528 213.36Q572.66 138.03, 648 182.69Q685.65 148.34, 720 185.99Q837.99 183.98, 840 301.97Q848.23 238.2, 912 246.43Q939.24 153.67, 1032 180.91Q1073.1 150, 1104 191.1Q1182.55 197.65, 1176 276.2Q1224.39 252.6, 1248 300.99Q1275.92 208.92, 1368 236.84Q1393.58 190.42, 1440 215.99Q1483.95 139.94, 1560 183.89z" fill="#182f5d"></path>
+        <path d="M1464 560L0 560 L0 379.05Q26.75 285.8, 120 312.54Q163.49 236.03, 240 279.52Q284.68 252.19, 312 296.87Q389.09 253.96, 432 331.04Q527.63 306.67, 552 402.3Q560.78 339.08, 624 347.86Q671.26 275.12, 744 322.38Q803.01 309.39, 816 368.41Q867.5 299.91, 936 351.41Q1000.06 343.47, 1008 407.53Q1027.4 354.93, 1080 374.33Q1067.88 290.2, 1152 278.08Q1259.39 265.47, 1272 372.86Q1303.77 284.63, 1392 316.4Q1418.25 270.65, 1464 296.9z" fill="#25467d"></path>
+        <path d="M1560 560L0 560 L0 425.82Q67.72 421.54, 72 489.27Q105.69 402.95, 192 436.64Q218.79 391.43, 264 418.22Q351.88 386.1, 384 473.97Q396.78 366.75, 504 379.53Q546 349.53, 576 391.54Q654.77 398.31, 648 477.08Q717.61 426.69, 768 496.29Q786.6 442.89, 840 461.49Q851.61 401.1, 912 412.71Q963.28 343.99, 1032 395.26Q1122.19 365.45, 1152 455.64Q1202.74 434.38, 1224 485.13Q1239.08 428.21, 1296 443.29Q1312.93 388.22, 1368 405.15Q1409.13 374.28, 1440 415.42Q1506.12 361.53, 1560 427.65z" fill="#356cb1"></path>
+        <path d="M1512 560L0 560 L0 575.74Q54.44 510.18, 120 564.62Q155.96 480.58, 240 516.53Q267.55 472.08, 312 499.63Q334.52 450.15, 384 472.68Q475.04 443.72, 504 534.75Q550.48 509.23, 576 555.7Q617.2 524.9, 648 566.11Q668.47 466.58, 768 487.05Q842.78 441.83, 888 516.61Q971.36 479.97, 1008 563.32Q1029.85 513.16, 1080 535.01Q1132.51 467.51, 1200 520.02Q1293.8 493.82, 1320 587.62Q1352.47 500.09, 1440 532.56Q1442.9 463.46, 1512 466.37z" fill="rgba(210, 242, 255, 1)"></path>
+      </g>
+      <defs>
+        <mask id="SvgjsMask1018">
+          <rect width="100%" height="100%" fill="#ffffff"></rect>
+        </mask>
+        <linearGradient x1="15.28%" y1="-39.29%" x2="84.72%" y2="139.29%" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient1019">
+          <stop stop-color="#0e2a47" offset="0"></stop>
+          <stop stop-color="#00459e" offset="1"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+  )
+}
+
+export const ChatBackgroundCreative: React.FC<IconSvgProps> = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1440 560">
+      <g mask="url(&quot;#SvgjsMask1017&quot;)" fill="none">
+        <rect width="100%" height="100%" x="0" y="0" fill="rgba(140, 106, 10, 1)"></rect>
+        <path d="M463.69 634.98C594.42 586.66 542.4 195.53 804.85 194.05 1067.3 192.57 1308.91 398.98 1487.17 401.25" stroke="rgba(177, 133, 23, 1)" stroke-width="2"></path>
+        <path d="M594.94 617.15C679.5 608.51 640.39 438.58 876.65 426.8 1112.91 415.02 1287.51 196.26 1440.07 191.6" stroke="rgba(177, 133, 23, 1)" stroke-width="2"></path>
+        <path d="M507.14 666.74C662.71 653.91 742.66 352.91 1038.55 338.94 1334.44 324.97 1428.39 146.03 1569.96 142.94" stroke="rgba(177, 133, 23, 1)" stroke-width="2"></path>
+        <path d="M135.92 569.4C300.67 526.86 347.6 85.5 604.55 75.82 861.5 66.14 838.86 145.82 1073.17 145.82 1307.49 145.82 1423.34 76.01 1541.8 75.82" stroke="rgba(177, 133, 23, 1)" stroke-width="2"></path>
+        <path d="M158.25 636.99C290.83 629.42 388.6 388.68 627.42 387.88 866.24 387.08 862.01 457.88 1096.59 457.88 1331.17 457.88 1447.17 388.07 1565.76 387.88" stroke="rgba(177, 133, 23, 1)" stroke-width="2"></path>
+      </g>
+      <defs>
+        <mask id="SvgjsMask1017">
+          <rect width="100%" height="100%" fill="#ffffff"></rect>
+        </mask>
+      </defs>
+    </svg>
+  )
+}
+
+export const AIAssistantInfoBackground: React.FC<IconSvgProps> = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1440 560">
+      <g mask="url(&quot;#SvgjsMask2112&quot;)" fill="none">
+        <rect width="100%" height="100%" x="0" y="0" fill="url(&quot;#SvgjsLinearGradient2113&quot;)"></rect>
+        <path d="M1440 0L1111.08 0L1440 239.58z" fill="rgba(255, 255, 255, .1)"></path>
+        <path d="M1111.08 0L1440 239.58L1440 383.02L517.53 0z" fill="rgba(255, 255, 255, .075)"></path>
+        <path d="M517.53 0L1440 383.02L1440 402.9L330.44999999999993 0z" fill="rgba(255, 255, 255, .05)"></path>
+        <path d="M330.45000000000005 0L1440 402.9L1440 424.77L138.54000000000005 0z" fill="rgba(255, 255, 255, .025)"></path>
+        <path d="M0 560L41.55 560L0 436.24z" fill="rgba(0, 0, 0, .1)"></path>
+        <path d="M0 436.24L41.55 560L353.07 560L0 238.63z" fill="rgba(0, 0, 0, .075)"></path>
+        <path d="M0 238.63L353.07 560L653.97 560L0 162.68z" fill="rgba(0, 0, 0, .05)"></path>
+        <path d="M0 162.68L653.97 560L838.29 560L0 121.26z" fill="rgba(0, 0, 0, .025)"></path>
+      </g>
+      <defs>
+        <mask id="SvgjsMask2112">
+          <rect width="100%" height="100%" fill="#ffffff"></rect>
+        </mask>
+        <linearGradient x1="15.28%" y1="-39.29%" x2="84.72%" y2="139.29%" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient2113">
+          <stop stop-color="rgba(224, 247, 216, 1)" offset="0"></stop>
+          <stop stop-color="rgba(255, 229, 50, 1)" offset="1"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+  )
+}
+
 export const DiscordIcon: React.FC<IconSvgProps> = ({
   size = 24,
   width,

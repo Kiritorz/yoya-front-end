@@ -92,7 +92,7 @@ export default function CareerPlanningPage() {
                                     <div className="flex flex-col gap-2">
                                         <div className="flex gap-2 items-center">
                                             <p className="text-blue-600 font-semibold text-xl">小Yo</p>
-                                            <p className="text-default-700">@有涯智教</p>
+                                            <p className="text-black/70">@有涯智教</p>
                                         </div>
                                         <div className="text-black text-sm">
                                             “在职业道路上，每一步都值得深思熟虑，规划你的未来，让每一步都充满意义。”

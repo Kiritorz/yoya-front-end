@@ -99,7 +99,7 @@ export default function PsychologicalCounselingPage() {
                                     <div className="flex flex-col gap-2">
                                         <div className="flex gap-2 items-center">
                                             <p className="text-blue-600 font-semibold text-xl">小Yo</p>
-                                            <p className="text-default-700">@有涯智教</p>
+                                            <p className="text-black/70">@有涯智教</p>
                                         </div>
                                         <div className="text-black text-sm">
                                             “无论今天你面对的挑战有多大，记住，每一个努力的瞬间都在塑造一个更加坚强、更有能力的你。”

@@ -1,4 +1,4 @@
-import { ChatBubbleLeftRightIcon, SparklesIcon } from "@heroicons/react/24/solid"
+import { ChatBubbleLeftRightIcon, PaperAirplaneIcon, PhoneIcon, SparklesIcon } from "@heroicons/react/24/solid"
 import { Input, ScrollShadow } from "@nextui-org/react"
 import { ChatBackgroundCreative, ChatBackgroundGentle, ChatBackgroundProfessional, Logo } from "../icons"
 import { useTheme } from "next-themes"
@@ -14,7 +14,8 @@ interface AIChatPaneProps {
     chatList: Chat[],
     title: string,
     mode: "default" | "gentle" | "professional" | "creative",
-    topContent?: ReactNode
+    topContent?: ReactNode,
+    supportVoiceConversation?: boolean
 }
 
 export const AIChatPane = (props: AIChatPaneProps) => {
@@ -45,6 +46,12 @@ export const AIChatPane = (props: AIChatPaneProps) => {
             professional: "bg-blue-200",
             creative: "bg-yellow-200"
         },
+        iconBackground: {
+            default: "bg-default-200/65 hover:bg-default-200",
+            gentle: "bg-default-50 hover:bg-default-50/75",
+            professional: "bg-default-50 hover:bg-default-50/75",
+            creative: "bg-default-50 hover:bg-default-50/75"
+        },
         icon: {
             default: "fill-amber-400",
             gentle: "fill-emerald-400",
@@ -60,11 +67,11 @@ export const AIChatPane = (props: AIChatPaneProps) => {
         creative: <ChatBackgroundCreative />
     }
 
-    const inputStyle = {
-        default: "z-10",
-        gentle: "z-10 absolute bottom-4 w-11/12",
-        professional: "z-10 absolute bottom-4 w-11/12",
-        creative: "z-10 absolute bottom-4 w-11/12"
+    const bottomStyle = {
+        default: "z-10 flex gap-3 w-11/12",
+        gentle: "z-10 flex gap-3 absolute bottom-4 w-11/12",
+        professional: "z-10 flex gap-3 absolute bottom-4 w-11/12",
+        creative: "z-10 flex gap-3 absolute bottom-4 w-11/12"
     }
 
     return (
@@ -100,11 +107,21 @@ export const AIChatPane = (props: AIChatPaneProps) => {
                     </div>
                 })}
             </ScrollShadow>
-            <Input
-                placeholder="询问..."
-                className={inputStyle[props.mode]}
-                startContent={<SparklesIcon className={`size-5 my-auto ${colors.icon[props.mode]}`} />}>
-            </Input>
+            <div className={bottomStyle[props.mode]}>
+                <Input
+                    placeholder="询问..."
+                    startContent={<SparklesIcon className={`size-5 my-auto ${colors.icon[props.mode]}`} />}
+                >
+                </Input>
+                <div className={`size-10 flex justify-center cursor-pointer transition ease-in-out active:scale-95 rounded-lg ${colors.iconBackground[props.mode]}`}>
+                    <PaperAirplaneIcon className={`size-5 my-auto ${colors.icon[props.mode]}`} />
+                </div>
+                {props.supportVoiceConversation === true
+                    ? <div className={`size-10 flex justify-center cursor-pointer transition ease-in-out active:scale-95 rounded-lg ${colors.iconBackground[props.mode]}`}>
+                        <PhoneIcon className={`size-5 my-auto ${colors.icon[props.mode]}`} />
+                    </div>
+                    : null}
+            </div>
         </div>
     )
 }

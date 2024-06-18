@@ -82,6 +82,7 @@ export default function PsychologicalCounselingPage() {
                         chatList: chatDataPsychologicalCounseling,
                         title: "YoYa 心理咨询师",
                         mode: "gentle",
+                        supportVoiceConversation: true,
                         topContent: (
                             <div className="relative h-24 rounded-lg p-4 overflow-hidden">
                                 <div className="absolute inset-0 rounded overflow-hidden">

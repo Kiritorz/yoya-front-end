@@ -62,7 +62,7 @@ export const chatDataPsychologicalCounseling: Chat[] = [
 export const chatDataCareerPlanning: Chat[] = [
   {
     mode: "user",
-    content: `我今天有点焦虑`
+    content: `我以后想做软件开发工程师，我该怎么努力`
   },
   {
     mode: "ai",

@@ -47,8 +47,8 @@ export const ChatBackgroundProfessional: React.FC<IconSvgProps> = () => {
           <rect width="100%" height="100%" fill="#ffffff"></rect>
         </mask>
         <linearGradient x1="15.28%" y1="-39.29%" x2="84.72%" y2="139.29%" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient1019">
-          <stop stop-color="#0e2a47" offset="0"></stop>
-          <stop stop-color="#00459e" offset="1"></stop>
+          <stop stopColor="#0e2a47" offset="0"></stop>
+          <stop stopColor="#00459e" offset="1"></stop>
         </linearGradient>
       </defs>
     </svg>
@@ -60,11 +60,11 @@ export const ChatBackgroundCreative: React.FC<IconSvgProps> = () => {
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1440 560">
       <g mask="url(&quot;#SvgjsMask1017&quot;)" fill="none">
         <rect width="100%" height="100%" x="0" y="0" fill="rgba(140, 106, 10, 1)"></rect>
-        <path d="M463.69 634.98C594.42 586.66 542.4 195.53 804.85 194.05 1067.3 192.57 1308.91 398.98 1487.17 401.25" stroke="rgba(177, 133, 23, 1)" stroke-width="2"></path>
-        <path d="M594.94 617.15C679.5 608.51 640.39 438.58 876.65 426.8 1112.91 415.02 1287.51 196.26 1440.07 191.6" stroke="rgba(177, 133, 23, 1)" stroke-width="2"></path>
-        <path d="M507.14 666.74C662.71 653.91 742.66 352.91 1038.55 338.94 1334.44 324.97 1428.39 146.03 1569.96 142.94" stroke="rgba(177, 133, 23, 1)" stroke-width="2"></path>
-        <path d="M135.92 569.4C300.67 526.86 347.6 85.5 604.55 75.82 861.5 66.14 838.86 145.82 1073.17 145.82 1307.49 145.82 1423.34 76.01 1541.8 75.82" stroke="rgba(177, 133, 23, 1)" stroke-width="2"></path>
-        <path d="M158.25 636.99C290.83 629.42 388.6 388.68 627.42 387.88 866.24 387.08 862.01 457.88 1096.59 457.88 1331.17 457.88 1447.17 388.07 1565.76 387.88" stroke="rgba(177, 133, 23, 1)" stroke-width="2"></path>
+        <path d="M463.69 634.98C594.42 586.66 542.4 195.53 804.85 194.05 1067.3 192.57 1308.91 398.98 1487.17 401.25" stroke="rgba(177, 133, 23, 1)" strokeWidth="2"></path>
+        <path d="M594.94 617.15C679.5 608.51 640.39 438.58 876.65 426.8 1112.91 415.02 1287.51 196.26 1440.07 191.6" stroke="rgba(177, 133, 23, 1)" strokeWidth="2"></path>
+        <path d="M507.14 666.74C662.71 653.91 742.66 352.91 1038.55 338.94 1334.44 324.97 1428.39 146.03 1569.96 142.94" stroke="rgba(177, 133, 23, 1)" strokeWidth="2"></path>
+        <path d="M135.92 569.4C300.67 526.86 347.6 85.5 604.55 75.82 861.5 66.14 838.86 145.82 1073.17 145.82 1307.49 145.82 1423.34 76.01 1541.8 75.82" stroke="rgba(177, 133, 23, 1)" strokeWidth="2"></path>
+        <path d="M158.25 636.99C290.83 629.42 388.6 388.68 627.42 387.88 866.24 387.08 862.01 457.88 1096.59 457.88 1331.17 457.88 1447.17 388.07 1565.76 387.88" stroke="rgba(177, 133, 23, 1)" strokeWidth="2"></path>
       </g>
       <defs>
         <mask id="SvgjsMask1017">
@@ -94,8 +94,8 @@ export const AIAssistantInfoBackground: React.FC<IconSvgProps> = () => {
           <rect width="100%" height="100%" fill="#ffffff"></rect>
         </mask>
         <linearGradient x1="15.28%" y1="-39.29%" x2="84.72%" y2="139.29%" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient2113">
-          <stop stop-color="rgba(224, 247, 216, 1)" offset="0"></stop>
-          <stop stop-color="rgba(255, 229, 50, 1)" offset="1"></stop>
+          <stop stopColor="rgba(224, 247, 216, 1)" offset="0"></stop>
+          <stop stopColor="rgba(255, 229, 50, 1)" offset="1"></stop>
         </linearGradient>
       </defs>
     </svg>

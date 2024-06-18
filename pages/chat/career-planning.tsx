@@ -76,6 +76,31 @@ export default function CareerPlanningPage() {
                         chatList: chatDataCareerPlanning,
                         title: "YoYa 生涯规划师",
                         mode: "creative",
+                        topContent: (
+                            <div className="relative h-24 rounded-lg p-4 overflow-hidden">
+                                <div className="absolute inset-0 rounded overflow-hidden">
+                                    <AIAssistantInfoBackground color="#f3dd81" />
+                                </div>
+                                <div className="z-20 flex absolute gap-4">
+                                    <img
+                                        className="my-auto rounded-full overflow-hidden"
+                                        alt="head"
+                                        src={getImgSource("/psychological-counseling-assistant.jpg")}
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <div className="flex flex-col gap-2">
+                                        <div className="flex gap-2 items-center">
+                                            <p className="text-blue-600 font-semibold text-xl">小Yo</p>
+                                            <p className="text-default-700">@有涯智教</p>
+                                        </div>
+                                        <div className="text-black text-sm">
+                                            “在职业道路上，每一步都值得深思熟虑，规划你的未来，让每一步都充满意义。”
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )
                     })}
                 </div>
             </section>

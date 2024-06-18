@@ -86,7 +86,7 @@ export default function PsychologicalCounselingPage() {
                         topContent: (
                             <div className="relative h-24 rounded-lg p-4 overflow-hidden">
                                 <div className="absolute inset-0 rounded overflow-hidden">
-                                    <AIAssistantInfoBackground />
+                                    <AIAssistantInfoBackground color="#b6d7a8" />
                                 </div>
                                 <div className="z-20 flex absolute gap-4">
                                     <img

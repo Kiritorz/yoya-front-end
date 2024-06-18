@@ -75,7 +75,7 @@ export const ChatBackgroundCreative: React.FC<IconSvgProps> = () => {
   )
 }
 
-export const AIAssistantInfoBackground: React.FC<IconSvgProps> = () => {
+export const AIAssistantInfoBackground = (props: { color: string }) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1440 560">
       <g mask="url(&quot;#SvgjsMask2112&quot;)" fill="none">
@@ -94,8 +94,8 @@ export const AIAssistantInfoBackground: React.FC<IconSvgProps> = () => {
           <rect width="100%" height="100%" fill="#ffffff"></rect>
         </mask>
         <linearGradient x1="15.28%" y1="-39.29%" x2="84.72%" y2="139.29%" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient2113">
-          <stop stopColor="rgba(224, 247, 216, 1)" offset="0"></stop>
-          <stop stopColor="rgba(255, 229, 50, 1)" offset="1"></stop>
+          <stop stopColor="#eeeeee" offset="0"></stop>
+          <stop stopColor={props.color} offset="1"></stop>
         </linearGradient>
       </defs>
     </svg>

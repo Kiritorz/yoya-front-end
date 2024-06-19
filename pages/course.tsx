@@ -70,14 +70,14 @@ export default function CoursePage() {
     const [filteredCourseData, setFilteredCourseData] = useState(courseData)
 
     useEffect(() => {
-        const types = courseData.map(course => course.type)
+        const types = ["all", ...courseData.map(course => course.type)]
         const uniqueTypes = Array.from(new Set(types))
         setCourseTypes(uniqueTypes)
     }, [courseData])
 
 
     useEffect(() => {
-        if (filterType === "") {
+        if (filterType === "" || filterType === "all") {
             setFilteredCourseData(courseData)
         } else {
             setFilteredCourseData(courseData.filter(course => course.type === filterType))

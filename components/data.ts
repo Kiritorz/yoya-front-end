@@ -82,3 +82,34 @@ export const chatDataCareerPlanning: Chat[] = [
     记住，成为一名软件开发工程师是一个持续的学习和成长过程。保持耐心，不断挑战自己，你将能够实现你的目标。加油！`
   },
 ]
+
+export const userData = {
+  uuid: "D8CDA01B-5C55-6CFD-BA63-E49F3426A56D",
+  headUrl: "/personal-info-head.jpg",
+  name: "K1ssInn",
+  createTime: new Date(),
+  learnedCourses: 3,
+  publishedPosts: 14,
+  learningCourses: [
+    {
+      title: "C++编程基础",
+      learned: 3,
+      total: 10
+    },
+    {
+      title: "Python编程基础",
+      learned: 5,
+      total: 10
+    },
+    {
+      title: "Java编程基础",
+      learned: 1,
+      total: 18
+    },
+    {
+      title: "JavaScript编程基础",
+      learned: 2,
+      total: 6
+    }
+  ]
+}

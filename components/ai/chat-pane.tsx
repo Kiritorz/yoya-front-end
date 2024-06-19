@@ -75,15 +75,14 @@ export const AIChatPane = (props: AIChatPaneProps) => {
     }
 
     return (
-        <div className="flex flex-col relative gap-4 h-full p-2 sm:p-4 overflow-hidden">
+        <div className="flex flex-col relative h-full p-2 sm:p-4 overflow-hidden">
             <div className="absolute inset-0 rounded overflow-hidden">
                 {backgroundSVG[props.mode]}
             </div>
-            <div className="z-10 flex gap-2">
+            <div className="z-10 flex gap-2 mb-2">
                 <ChatBubbleLeftRightIcon className={`size-6 my-auto ${colors.icon[props.mode]}`} />
                 <p className={`font-semibold text-lg ${colors.foregroundTitle[props.mode]}`}>{props.title}</p>
             </div>
-
             <div className={`z-10 ${colors.foregroundTitle[props.mode]}`}>
                 {props.topContent}
             </div>
@@ -107,7 +106,7 @@ export const AIChatPane = (props: AIChatPaneProps) => {
                     </div>
                 })}
             </ScrollShadow>
-            <div className={bottomStyle[props.mode]}>
+            <div className={bottomStyle[props.mode] + " mt-2"}>
                 <Input
                     placeholder="询问..."
                     startContent={<SparklesIcon className={`size-5 my-auto ${colors.icon[props.mode]}`} />}

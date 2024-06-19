@@ -17,8 +17,16 @@ export const siteConfig = {
       href: "/chat/psychological-counseling"
     },
     {
+      label: "课程学习",
+      href: "/course"
+    },
+    {
       label: "学习计划",
       href: "/chat/study-plan"
+    },
+    {
+      label: "学情追踪",
+      href: "/trace",
     },
     {
       label: "个人中心",
@@ -39,8 +47,16 @@ export const siteConfig = {
       href: "/chat/psychological-counseling"
     },
     {
+      label: "课程学习",
+      href: "/course"
+    },
+    {
       label: "学习计划",
       href: "/chat/study-plan"
+    },
+    {
+      label: "学情追踪",
+      href: "/trace",
     },
     {
       label: "个人中心",

@@ -1,12 +1,12 @@
 import { AIChatPane } from "@/components/ai/chat-pane";
 import { chatDataPsychologicalCounseling } from "@/components/data";
 import { AIAssistantInfoBackground, Logo } from "@/components/icons";
+import { LogoTitle } from "@/components/logoTitle";
 import DefaultLayout from "@/layouts/default";
 import { getImgSource } from "@/utils";
 import { PlusCircleIcon } from "@heroicons/react/24/outline";
 import { ChatBubbleBottomCenterIcon } from "@heroicons/react/24/solid";
 import { Button, Divider } from "@nextui-org/react";
-import { useTheme } from "next-themes";
 
 const chatHistory = [
     {
@@ -21,18 +21,6 @@ const chatHistory = [
 ]
 
 export default function PsychologicalCounselingPage() {
-    const { theme, setTheme } = useTheme()
-
-    const SiderTitle = (
-        <div className="flex gap-4 justify-center">
-            <Logo size={48} theme={theme} />
-            <Divider orientation="vertical" className="h-8 my-auto" />
-            <div className="my-auto text-sm tracking-widest ml-2">
-                <p>有涯</p>
-                <p>智教</p>
-            </div>
-        </div>
-    )
 
     const NewChatButton = (
         <Button
@@ -72,7 +60,7 @@ export default function PsychologicalCounselingPage() {
         <DefaultLayout>
             <section className="flex flex-col sm:flex-row h-full items-center justify-center gap-4 pb-8 md:pb-12">
                 <div className="w-full flex flex-col gap-4 md:w-1/5 p-4 self-start h-fit sm:h-[44rem] border-1 border-default-400/80 rounded">
-                    {SiderTitle}
+                    <LogoTitle />
                     <Divider />
                     {NewChatButton}
                     {ChatHistory}
@@ -111,6 +99,6 @@ export default function PsychologicalCounselingPage() {
                     })}
                 </div>
             </section>
-        </DefaultLayout >
+        </DefaultLayout>
     )
 }

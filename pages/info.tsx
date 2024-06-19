@@ -1,3 +1,5 @@
+import { userData } from "@/components/data";
+import { UserHead } from "@/components/user/info";
 import DefaultLayout from "@/layouts/default";
 import { getImgSource } from "@/utils";
 import { BookOpenIcon, DocumentTextIcon, EnvelopeIcon, UserCircleIcon } from "@heroicons/react/24/solid";
@@ -5,16 +7,9 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 import { format } from "date-fns";
 import { useState } from "react";
 
-const personalData = {
-    uuid: "D8CDA01B-5C55-6CFD-BA63-E49F3426A56D",
-    headUrl: "/personal-info-head.jpg",
-    name: "K1ssInn",
-    createTime: new Date()
-}
-
 export default function PersonalInfoPage() {
 
-    const [personalInfo, setPersonalInfo] = useState(personalData)
+    const [personalInfo, setPersonalInfo] = useState(userData)
 
     const [rightContent, setRightContent] = useState<
         "study-course" | "study-plan" | "post-question" | "post-collection" | "me-info" | "me-password" | "message-system" | ""
@@ -22,13 +17,7 @@ export default function PersonalInfoPage() {
 
     const basicInfo = (
         <div className="flex flex-col items-center gap-2">
-            <img
-                className="lg:mt-8 rounded-full"
-                alt="head"
-                src={getImgSource(personalInfo.headUrl)}
-                height={96}
-                width={96}
-            />
+            <UserHead headUrl={personalInfo.headUrl} />
             <div className="my-auto text-center">
                 <div className="font-semibold text-2xl">{personalInfo.name}</div>
                 {/* <div className="text-xs">{personalInfo.uuid}</div> */}

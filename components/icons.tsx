@@ -23,11 +23,11 @@ export const SigninBackground: React.FC<IconSvgProps> = () => {
       </desc>
       <defs>
         <linearGradient x1="0.000000" y1="257.454346" x2="100%" y2="548.363403" id="paint_linear_10_16_0" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#4923B4" />
-          <stop offset="1.000000" stop-color="#E878CF" />
+          <stop stopColor="#4923B4" />
+          <stop offset="1.000000" stopColor="#E878CF" />
         </linearGradient>
       </defs>
-      <path id="Rectangle 2" d="M0 0L1440 0L1440 600C1440 710.45 1350.46 800 1240 800L0 800L0 0Z" fill="url(#paint_linear_10_16_0)" fill-opacity="1.000000" fill-rule="evenodd" />
+      <path id="Rectangle 2" d="M0 0L1440 0L1440 600C1440 710.45 1350.46 800 1240 800L0 800L0 0Z" fill="url(#paint_linear_10_16_0)" fillOpacity="1.000000" fillRule="evenodd" />
     </svg>
   )
 }

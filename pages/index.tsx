@@ -43,10 +43,10 @@ export default function IndexPage() {
   // 左
   const DayTimeCard = (
     <div className="flex gap-3">
-      <div className="bg-default-foreground text-default py-4 sm:py-12 text-center text-3xl xl:text-7xl w-1/2 rounded-lg">
+      <div className="bg-default-foreground text-default py-4 sm:py-12 text-center text-3xl lg:text-5xl xl:text-7xl w-1/2 rounded-lg">
         {format(currentTime, "HH")}
       </div>
-      <div className="bg-default-foreground text-default py-4 sm:py-12 text-center text-3xl xl:text-7xl w-1/2 rounded-lg">
+      <div className="bg-default-foreground text-default py-4 sm:py-12 text-center text-3xl lg:text-5xl xl:text-7xl w-1/2 rounded-lg">
         {format(currentTime, "mm")}
       </div>
     </div>
@@ -83,7 +83,7 @@ export default function IndexPage() {
           <Divider />
           {TodayTodoList}
         </div>
-        <div className="max-[640px]:w-full min-[640px]:w-3/4 h-[44rem] self-start">
+        <div className="max-[640px]:w-full min-[640px]:w-3/4 h-[38rem] self-start">
           {ChatPane}
         </div>
       </section>

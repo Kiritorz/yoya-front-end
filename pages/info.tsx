@@ -51,7 +51,7 @@ export default function PersonalInfoPage() {
                         </p>
                     </div>
                 </AccordionItem>
-                <AccordionItem
+                {/* <AccordionItem
                     key="my-post" aria-label="my-post"
                     title="我的帖子" subtitle="查看提问与收藏帖子"
                     startContent={<DocumentTextIcon className="size-7 my-auto fill-amber-400" />}
@@ -72,7 +72,7 @@ export default function PersonalInfoPage() {
                             我的收藏
                         </p>
                     </div>
-                </AccordionItem>
+                </AccordionItem> */}
                 <AccordionItem
                     key="my-info" aria-label="my-info"
                     title="我的资料" subtitle="查看与修改个人资料"
@@ -95,7 +95,7 @@ export default function PersonalInfoPage() {
                         </p>
                     </div>
                 </AccordionItem>
-                <AccordionItem
+                {/* <AccordionItem
                     key="my-message" aria-label="my-message"
                     title="我的消息" subtitle="查看系统消息"
                     startContent={<EnvelopeIcon className="size-7 my-auto fill-amber-400" />}
@@ -109,13 +109,8 @@ export default function PersonalInfoPage() {
                             系统消息
                         </p>
                     </div>
-                </AccordionItem>
+                </AccordionItem> */}
             </Accordion>
-            {/* <p className="font-semibold">我的学习</p>
-            <div>
-                <p>我的课程</p>
-                <p>我的计划</p>
-            </div> */}
         </div>
     )
 

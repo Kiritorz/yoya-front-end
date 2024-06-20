@@ -1,9 +1,10 @@
 import { AIChatPane } from "@/components/ai/chat-pane";
+import { CourseCard } from "@/components/course/course-card";
 import { chatDataStudyPlan, userData } from "@/components/data";
 import { LogoTitle } from "@/components/logoTitle";
 import { UserHead } from "@/components/user/info";
 import DefaultLayout from "@/layouts/default";
-import { Card, CardBody } from "@nextui-org/react";
+import { Card, CardBody, Progress } from "@nextui-org/react";
 
 export default function TracePage() {
 
@@ -36,19 +37,6 @@ export default function TracePage() {
         </div>
     )
 
-    const CourseCard = (props: {
-        course: typeof userData.learningCourses[0]
-    }) => {
-        return (
-            <Card radius="sm" shadow="none" className="border-1 border-default-200 bg-gradient-to-br from-cyan-50 to-white">
-                <CardBody>
-                    <p className="text-black">{props.course.title}</p>
-                    <p className="text-default-400 text-sm">已学习 {props.course.learned} / {props.course.total} 节</p>
-                </CardBody>
-            </Card>
-        )
-    }
-
     const LearningCard = (
         <div className="flex flex-col gap-2">
             <div className="flex justify-between">
@@ -68,16 +56,6 @@ export default function TracePage() {
                         <CourseCard key={index} course={course} />
                     ))
                 }
-            </div>
-        </div>
-    )
-
-    const PostCard = (
-        <div className="flex flex-col gap-2">
-            <div className="flex justify-start">
-                <p>
-                    动态
-                </p>
             </div>
         </div>
     )
@@ -104,7 +82,6 @@ export default function TracePage() {
                 <div className="w-full flex flex-col gap-6 lg:w-3/4 h-full p-4 border-1 border-default-400/80 rounded">
                     {TraceTopInfo}
                     {LearningCard}
-                    {PostCard}
                     {TraceStats}
                 </div>
             </section>

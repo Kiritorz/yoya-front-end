@@ -53,13 +53,13 @@ export default function StudyPlanPage() {
     return (
         <DefaultLayout>
             <section className="flex flex-col sm:flex-row h-full items-center justify-center gap-4 pb-8 md:pb-12">
-                <div className="w-full flex flex-col gap-4 md:w-1/5 p-4 self-start h-fit sm:h-[44rem] border-1 border-default-400/80 rounded">
+                <div className="w-full flex flex-col gap-4 md:w-1/5 p-4 self-start h-fit sm:h-[38rem] border-1 border-default-400/80 rounded">
                     <LogoTitle />
                     <Divider />
                     {NewChatButton}
                     {ChatHistory}
                 </div>
-                <div className="w-full lg:w-4/5 h-[44rem] self-start">
+                <div className="w-full lg:w-4/5 h-[38rem] self-start">
                     {AIChatPane({
                         chatList: chatDataStudyPlan,
                         title: "YoYa 学习规划师",

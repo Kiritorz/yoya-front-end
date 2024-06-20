@@ -1,9 +1,10 @@
 import { AIChatPane } from "@/components/ai/chat-pane";
+import { CourseCard } from "@/components/course/course-card";
 import { chatDataStudyPlan } from "@/components/data";
 import { SearchIcon } from "@/components/icons";
 import { LogoTitle } from "@/components/logoTitle";
 import DefaultLayout from "@/layouts/default";
-import { Button, Input } from "@nextui-org/react";
+import { Button, Input, Progress } from "@nextui-org/react";
 import { useEffect, useState } from "react";
 
 const courseData = [
@@ -70,14 +71,14 @@ export default function CoursePage() {
     const [filteredCourseData, setFilteredCourseData] = useState(courseData)
 
     useEffect(() => {
-        const types = ["all", ...courseData.map(course => course.type)]
+        const types = ["所有课程", ...courseData.map(course => course.type)]
         const uniqueTypes = Array.from(new Set(types))
         setCourseTypes(uniqueTypes)
     }, [courseData])
 
 
     useEffect(() => {
-        if (filterType === "" || filterType === "all") {
+        if (filterType === "" || filterType === "所有课程") {
             setFilteredCourseData(courseData)
         } else {
             setFilteredCourseData(courseData.filter(course => course.type === filterType))
@@ -114,10 +115,7 @@ export default function CoursePage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
             {
                 filteredCourseData.map((course, index) => (
-                    <div key={index} className="flex flex-col gap-2 p-4 border-1 border-default-400/80 rounded">
-                        <p className="text-black">{course.title}</p>
-                        <p className="text-default-400 text-sm">已学习 {course.learned} / {course.total} 节</p>
-                    </div>
+                    <CourseCard key={index} course={course} />
                 ))
             }
         </div>
